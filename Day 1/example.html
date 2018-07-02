@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <div id=headers>
+    <div id=headers align="center">
       <h1> Header 1 </h1>
       <h2> Header 2 </h2>
       <h3> Header 3 </h3>
@@ -25,12 +25,13 @@
       <hr>
     </div>
 
+    <div id="link-g" align="center">
     <h4> This is a blank link to Google, _blank opens a new tab"
     <br>
     <a href="https://www.google.com" target="_blank"> Google </a>
 
 
-    <div id="form1">
+    <div id="form1" align="center">
       <h3> Form 1 - Simple form</h3>
       <form action="/action_page.php">
       <label for="name">First name: </label>
@@ -45,7 +46,7 @@
     </div>
 
 
-    <div id="form2">
+    <div id="form2" align="center">
       <h3> Form 2 - Fieldset & Legend</h3>
       <form action="/action_page.php">
     Password: <input type="password" name="pass" placeholder="your password here"><br>
@@ -62,7 +63,7 @@
     <hr>
 
 
-    <div id="form3">
+    <div id="form3" align="center">
       <h3> Form 3 - Select & optgroup </h3>
 
       <form action="/action_page.php">
@@ -86,7 +87,7 @@
 
 <hr>
 
-  <div id="form4">
+  <div id="form4" align="center">
     <!-- This is a comment -->
     <h3> Form 4 - Datalist
     <form action="/action_page.php">
@@ -104,7 +105,7 @@
   </div>
 
 <hr>
-    <div id="form5">
+    <div id="form5" align="center">
       <h3> Form 5 - Radio button & Check Box </h3>
       <br>
       <form action="/action_page.php">
@@ -123,11 +124,12 @@
 
     <hr>
 
-    <div id="form6">
+    <div id="form6" align="center">
       <h3> Form 6 - Textarea </h3>
 
       <form action="/action_page.php">
           Essay:
+          <br>
           <textarea name="message" rows="10" cols="30">
             You need to be careful with textareas because, for example, this line is one line break
             from the start, so sometimes you are adding spaces or breaks without knowledge of it.
@@ -135,14 +137,41 @@
           <br><br>
     <input type="submit" value="Submit">
      </form>
-
-
     </div>
 
 <hr>
 
-<div id="pdf-file">
-      <embed src="HTML_Jedi.pdf" width="800px" height="2100px" align="middle"/>
+    <div id="container-format" align="center">
+      <h3> Below there is an example of how containers work </h3>
+      <img src="images/containers.jpg">
+    </div>
+
+<br>
+<hr>
+<br>
+
+<div id="table-example" align="center">
+  <h3> Below there is an example of how table works</h3>
+  <table> <tr>
+      <th>Column 1</th>
+      <th>Column 2</th>
+      <th>Column 3</th>
+  </tr> <tr>
+      <td>Content 1.1</td>
+      <td>Content 2.1</td>
+      <td>Content 3.1</td>
+    </tr><tr>
+      <td>Content 1.2</td>
+      <td>Content 2.2</td>
+      <td>Content 3.2</td>
+    </tr>
+  </table>
+</div>
+
+<br><hr><br>
+
+<div id="pdf-file" align="center">
+      <embed src="files/HTML_Jedi.pdf" width="800px" height="2100px" align="middle"/>
 </div>
 
 
