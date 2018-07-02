@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 
+<html lang=”es-ES”>
+<meta charset=”UTF-8”>
+
+
 <html>
 
   <head>
@@ -8,10 +12,140 @@
   </head>
 
   <body>
-      <h1> Big heading </h1>
+    <div>
+      <h1> Header 1 </h1>
+      <h2> Header 2 </h2>
+      <h3> Header 3 </h3>
+      <h4> Header 4 </h4>
+      <h5> Header 5 </h5>
+      <h6> Header 6 </h6>
       <hr>
       <p> This is a paragraph </p>
-      <span> This is text as well </span>
+      <span> Below thre is the PDF of the course </span>
+      <hr>
+    </div>
+
+    <h4> This is a blank link to Google, _blank opens a new tab"
+    <br>
+    <a href="https://www.google.com" target="_blank"> Google </a>
+
+
+    <div>
+      <h3> Form 1 - Simple form</h3>
+      <form action="/action_page.php">
+      <label for="name">First name: </label>
+      <input type="text" name="firstname" value="Name" id="name"> <br>
+      <label for="color">Color: </label>
+      <input type="color" name="color" id="color" value="#2fb8d0"> <br>
+      <label for="bday">Birthday: </label>
+      <input type="date" name="bday" id="bday">
+      <br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+
+    <div>
+      <h3> Form 2 - Fieldset & Legend</h3>
+      <form action="/action_page.php">
+    Password: <input type="password" name="pass" placeholder="your password here"><br>
+    <fieldset>
+      <legend>Dog:</legend>
+      Email: <input type="email" name="email" placeholder="example@email.com" ><br> Number: <input type="number" name="number" value="1" max="5"><br>
+      Size: <input type="range" name="range" value="4" step="2"><br>
+      Url: <input type="url" name="url" placeholder="http://www.google.com"><br>
+    </fieldset>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+    <hr>
+
+
+    <div>
+      <h3> Form 3 - Select & optgroup </h3>
+
+      <form action="/action_page.php">
+            Best color:
+              <select name="colors">
+                    <optgroup label="Cold">
+                             <option value="blue">Blue</option>
+                             <option value="green">Green</option>
+                    </optgroup>
+                             <optgroup label="Warm">
+                             <option value="red">Red</option>
+                             <option value="yellow" selected>Yellow</option>
+                    </optgroup>
+              </select>
+  <br><br>
+  <input type="submit" value="Submit">
+  <br><br>
+</form>
+
+    </div>
+
+<hr>
+
+  <div>
+    <!-- This is a comment -->
+    <h3> Form 4 - Datalist
+    <form action="/action_page.php">
+          Best color:
+          <input list="colors" name="color">
+          <datalist id="colors">
+              <option value="Blue"></option>
+              <option value="Red"></option>
+              <option value="Yellow"></option>
+              <option value="Green"></option>
+          </select>
+          <br><br>
+          <input type="submit" value="Submit">
+    </form>
+  </div>
+
+<hr>
+    <div>
+      <h3> Form 5 - Radio button & Check Box </h3>
+      <br>
+      <form action="/action_page.php">
+          <label for="male">Male: </label>
+          <input type="radio" name="gender" value="male" id="male" checked><br>
+          <label for="female">Female: </label>
+          <input type="radio" name="gender" value="female" id=”female”><br>
+          <label for="other">Other: </label>
+          <input type="radio" name="gender" value="other" id=”other”><br>
+          <input type="checkbox" name="gender2" value="NB"> Non-binary <br>
+          <input type="checkbox" name="gender3" value="AH"> Apache Helicopter <br>
+          <input type="submit" value="Submit">
+     </form>
+
+    </div>
+
+    <hr>
+
+    <div>
+      <h3> Form 6 - Textarea </h3>
+
+      <form action="/action_page.php">
+          Essay:
+          <textarea name="message" rows="10" cols="30">
+            You need to be careful with textareas because, for example, this line is one line break
+            from the start, so sometimes you are adding spaces or breaks without knowledge of it.
+          </textarea>
+          <br><br>
+    <input type="submit" value="Submit">
+     </form>
+
+
+    </div>
+
+<hr>
+    <div>
+      <embed src="HTML_Jedi.pdf" width="800px" height="2100px" align="middle"/>
+    </div>
+
+<hr>
+
   </body>
 
 </html>
