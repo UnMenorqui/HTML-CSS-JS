@@ -193,10 +193,11 @@
 
 <div id="video">
   <h3> Video Example </h3>
-  <video width="330" height="250" controls autoplay>
-      <source src="popcorn.mp4" type="video/mp4">
-      <source src="popcorn.webm" type="video/webm">
-  </video>
+
+  <video width="320" height="240" controls>
+  <source src="files/JunsKitchen.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+</video>
 </div>
 
 <br><hr><br>
@@ -204,8 +205,7 @@
 <div id="audio">
   <h3> Audio Example </h3>
   <audio controls>
-    <source src="birds.wav" type="audio/wav">
-    <source src="birds.mp3" type="audio/mpeg">
+    <source src="files/ShapeofYou.mp3" type="audio/mpeg">
   </audio>
 </div>
 
@@ -213,8 +213,7 @@
 
 <div id="iframe">
   <h3> Inlane Frame Example </h3>
-  <iframe width="560" height="315" src="https://raco.fib.upc.edu" frameborder="0"
-          allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <iframe style="visibility:hidden;" onload="this.style.visibility = 'visible';" width="560" height="315" src="https://raco.fib.upc.edu"></iframe>
 </div>
 
 <br><hr><br>
