@@ -1,0 +1,13 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: #dbeeff;
+  color: #131722;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+nav {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 30px;
+    color: ##112263
+}

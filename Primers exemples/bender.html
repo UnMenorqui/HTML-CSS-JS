@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<html lang="en" class="">
+
+<head>
+    	<title>Index</title>
+        <link rel="stylesheet" href="main.css">
+
+
+    <nav>
+      <a href="index.html">Index</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="example.html">Examples</a> |
+      <a href="tags.html">Tags</a> |
+      <a href="table.html">Table</a> |
+      <a href="grid.html">Grid</a> |
+      <a href="article.html">Article</a> |
+      <a href="bender.html">Bender</a>
+
+    </nav>
+
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <link rel="shortcut icon" type="image/x-icon" href="//static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico">
+    <link rel="mask-icon" type="" href="//static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111">
+    <link rel="canonical" href="https://codepen.io/mfucek1/pen/OWeMod">
+<link href="https://fonts.googleapis.com/css?family=Orbitron:700" rel="stylesheet">
+
+
+<style class="cp-pen-styles">
+
+.bender_wrapper {
+  position: relative;
+  margin: 100px auto;
+  width: 220px;
+  transform: scale(0.7);
+}
+.bender_wrapper .bender_head {
+  background-color: #bdc3c7;
+  height: 420px;
+  width: 220px;
+  border-radius: 100px 100px 10px 10px;
+  box-shadow: 0 1px 15px -3px black;
+  transition: all .2s ease;
+}
+.bender_wrapper .antena_base {
+  position: absolute;
+  height: 50px;
+  width: 70px;
+  background-color: #bdc3c7;
+  border-radius: 50%;
+  top: -20px;
+  left: calc(110px - 35px);
+  z-index: 5;
+  box-shadow: 0 -15px 10px -17px black;
+}
+.bender_wrapper .antena_middle {
+  position: absolute;
+  top: -165px;
+  left: calc(110px - 13px);
+  border-bottom: 140px solid #bdc3c7;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-radius: 0px 0px 10px 10px;
+  height: 0;
+  width: 6px;
+  transition: all .2s ease;
+  animation: tilt 4s infinite ease-in-out 1s;
+}
+.bender_wrapper .antena_middle:after {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: #bdc3c7;
+  border-radius: 50%;
+  top: -15px;
+  left: -12px;
+}
+.bender_wrapper .bender_mask {
+  position: absolute;
+  width: 280px;
+  height: 90px;
+  background: #34495E;
+  border: 10px solid #89C4F4;
+  border-radius: 100px 100px 100px 100px;
+  top: 140px;
+  left: calc(110px - 150px);
+  box-shadow: 0px 0px 0px 10px #34495E;
+  overflow: hidden;
+}
+.bender_wrapper .bender_mask .eye_left_wrapper {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: #FDE3A7;
+  border-radius: 50%;
+  top: 0px;
+  left: 30px;
+  overflow: hidden;
+  transform: scale(1.15);
+  box-shadow: 0 5px 15px -3px black;
+}
+.bender_wrapper .bender_mask .eye_left_wrapper:after {
+  content: '';
+  height: 20px;
+  width: 20px;
+  background-color: #34495E;
+  position: absolute;
+  left: 50px;
+}
+.bender_wrapper .bender_mask .eye_left_wrapper .eye_cover_top {
+  position: relative;
+  top: -10px;
+  height: 40px;
+  width: 200px;
+  background-color: #34495E;
+  transform: rotate(15deg);
+  animation: wink_top 4s infinite step-start 1s;
+}
+.bender_wrapper .bender_mask .eye_left_wrapper .eye_cover_bottom {
+  position: absolute;
+  top: 80px;
+  height: 40px;
+  width: 200px;
+  background-color: #34495E;
+}
+.bender_wrapper .bender_mask .eye_right_wrapper {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: #FDE3A7;
+  border-radius: 50%;
+  top: 0px;
+  left: 150px;
+  overflow: hidden;
+  transform: rotatey(180deg) scale(1.15);
+  box-shadow: 0 5px 15px -3px black;
+}
+.bender_wrapper .bender_mask .eye_right_wrapper:after {
+  content: '';
+  height: 20px;
+  width: 20px;
+  background-color: #34495E;
+  position: absolute;
+  left: 50px;
+}
+.bender_wrapper .bender_mask .eye_right_wrapper .eye_cover_top {
+  position: relative;
+  top: -10px;
+  height: 40px;
+  width: 200px;
+  background-color: #34495E;
+  transform: rotate(15deg);
+  animation: wink_top 4s infinite step-start 1s;
+}
+.bender_wrapper .bender_mask .eye_right_wrapper .eye_cover_bottom {
+  position: absolute;
+  top: 80px;
+  height: 40px;
+  width: 200px;
+  background-color: #34495E;
+}
+.bender_wrapper .mouth_wrapper {
+  position: absolute;
+  width: 190px;
+  height: 69px;
+  background: #34495E;
+  border: 8px solid #34495E;
+  border-radius: 100px 100px 100px 100px;
+  top: 295px;
+  left: calc(110px - 103px);
+  overflow: hidden;
+  z-index: 1;
+}
+.bender_wrapper .mouth_wrapper .tooth, .bender_wrapper .mouth_wrapper .tooth_1, .bender_wrapper .mouth_wrapper .tooth_2, .bender_wrapper .mouth_wrapper .tooth_3, .bender_wrapper .mouth_wrapper .tooth_4, .bender_wrapper .mouth_wrapper .tooth_5, .bender_wrapper .mouth_wrapper .tooth_6, .bender_wrapper .mouth_wrapper .tooth_7, .bender_wrapper .mouth_wrapper .tooth_8, .bender_wrapper .mouth_wrapper .tooth_9, .bender_wrapper .mouth_wrapper .tooth_10, .bender_wrapper .mouth_wrapper .tooth_11, .bender_wrapper .mouth_wrapper .tooth_12, .bender_wrapper .mouth_wrapper .tooth_13, .bender_wrapper .mouth_wrapper .tooth_14, .bender_wrapper .mouth_wrapper .tooth_15, .bender_wrapper .mouth_wrapper .tooth_16, .bender_wrapper .mouth_wrapper .tooth_17, .bender_wrapper .mouth_wrapper .tooth_18 {
+  position: absolute;
+  height: 20px;
+  width: 30px;
+  background-color: #FDE3A7;
+}
+.bender_wrapper .mouth_wrapper .tooth_1 {
+  left: -5px;
+}
+.bender_wrapper .mouth_wrapper .tooth_2 {
+  left: 30px;
+}
+.bender_wrapper .mouth_wrapper .tooth_3 {
+  left: 65px;
+}
+.bender_wrapper .mouth_wrapper .tooth_4 {
+  left: 100px;
+}
+.bender_wrapper .mouth_wrapper .tooth_5 {
+  left: 135px;
+}
+.bender_wrapper .mouth_wrapper .tooth_6 {
+  left: 170px;
+}
+.bender_wrapper .mouth_wrapper .tooth_7 {
+  left: -5px;
+  top: 25px;
+  animation: mouth_open 4s infinite step-start 1s;
+}
+.bender_wrapper .mouth_wrapper .tooth_8 {
+  left: 30px;
+  top: 25px;
+  animation: mouth_open 4s infinite step-start 1s;
+}
+.bender_wrapper .mouth_wrapper .tooth_9 {
+  left: 65px;
+  top: 25px;
+  animation: mouth_open 4s infinite step-start 1s;
+}
+.bender_wrapper .mouth_wrapper .tooth_10 {
+  left: 100px;
+  top: 25px;
+  animation: mouth_open 4s infinite step-start 1s;
+}
+.bender_wrapper .mouth_wrapper .tooth_11 {
+  left: 135px;
+  top: 25px;
+  animation: mouth_open 4s infinite step-start 1s;
+}
+.bender_wrapper .mouth_wrapper .tooth_12 {
+  left: 170px;
+  top: 25px;
+  animation: mouth_open 4s infinite step-start 1s;
+}
+.bender_wrapper .mouth_wrapper .tooth_13 {
+  left: -5px;
+  top: 50px;
+}
+.bender_wrapper .mouth_wrapper .tooth_14 {
+  left: 30px;
+  top: 50px;
+}
+.bender_wrapper .mouth_wrapper .tooth_15 {
+  left: 65px;
+  top: 50px;
+}
+.bender_wrapper .mouth_wrapper .tooth_16 {
+  left: 100px;
+  top: 50px;
+}
+.bender_wrapper .mouth_wrapper .tooth_17 {
+  left: 135px;
+  top: 50px;
+}
+.bender_wrapper .mouth_wrapper .tooth_18 {
+  left: 170px;
+  top: 50px;
+}
+@keyframes wink_top {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+@keyframes wink_bottom {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+@keyframes mouth_open {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tilt {
+  0% {
+    transform: rotate(50deg);
+    transform-origin: 0% 100%;
+  }
+  1% {
+    transform: rotate(-45deg);
+    transform-origin: 0% 100%;
+  }
+  2% {
+    transform: rotate(40deg);
+    transform-origin: 0% 100%;
+  }
+  3% {
+    transform: rotate(-35deg);
+    transform-origin: 0% 100%;
+  }
+  4% {
+    transform: rotate(30deg);
+    transform-origin: 0% 100%;
+  }
+  5% {
+    transform: rotate(-25deg);
+    transform-origin: 0% 100%;
+  }
+  6% {
+    transform: rotate(20deg);
+    transform-origin: 0% 100%;
+  }
+  7% {
+    transform: rotate(-15deg);
+    transform-origin: 0% 100%;
+  }
+  8% {
+    transform: rotate(10deg);
+    transform-origin: 0% 100%;
+  }
+  9% {
+    transform: rotate(0deg);
+    transform-origin: 0% 100%;
+  }
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 0% 100%;
+  }
+}
+</style></head><body>
+
+<div class="bender_wrapper">
+
+	<div class="bender_head"></div>
+
+	<div class="antena_base"></div>
+	<div class="antena_middle"></div>
+	<!---
+	<div class="antena_top"></div>
+	--->
+	<div class="bender_mask">
+
+		<div class="eye_left_wrapper">
+			<div class="eye_cover_top"></div>
+			<div class="eye_cover_bottom"></div>
+		</div>
+
+		<div class="eye_right_wrapper">
+			<div class="eye_cover_top"></div>
+			<div class="eye_cover_bottom"></div>
+		</div>
+
+	</div>
+
+	<div class="mouth_wrapper">
+
+		<div class="tooth_1"></div>
+		<div class="tooth_2"></div>
+		<div class="tooth_3"></div>
+		<div class="tooth_4"></div>
+		<div class="tooth_5"></div>
+		<div class="tooth_6"></div>
+
+		<div class="tooth_7"></div>
+		<div class="tooth_8"></div>
+		<div class="tooth_9"></div>
+		<div class="tooth_10"></div>
+		<div class="tooth_11"></div>
+		<div class="tooth_12"></div>
+
+		<div class="tooth_13"></div>
+		<div class="tooth_14"></div>
+		<div class="tooth_15"></div>
+		<div class="tooth_16"></div>
+		<div class="tooth_17"></div>
+		<div class="tooth_18"></div>
+
+	</div>
+
+</div>
+</body></html>
