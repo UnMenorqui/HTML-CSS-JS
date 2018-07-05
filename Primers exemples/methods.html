@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<nav>
+  <a href="index.html">Index</a> |
+  <a href="contact.html">Contact</a> |
+  <a href="example.html">Examples</a> |
+  <a href="tags.html">Tags</a> |
+  <a href="table.html">Table</a> |
+  <a href="grid.html">Grid</a> |
+  <a href="bender.html">Bender</a> |
+  <a href="curriculum.html">Curriculum</a> |
+  <a href="galeria.html">Galeria</a> |
+  <a href="methods.html">Finding Methods</a>
+
+</nav>
+
+<body>
+	<div id="first">
+    </div>
+
+    <div class="second">
+    </div>
+
+    <div class="second">
+    </div>
+
+    <div>
+    </div>
+
+    <script>
+    var x = document.getElementsByTagName("div");
+    for (i = 0; i < 4; i++) {
+        if (i == 0) x[i].innerHTML = "PRIMER";
+        else if (i > 0 && i < 3) x[i].innerHTML = "SEGON";
+        else x[i].innerHTML = "TERCER";
+    }
+
+    </script>
+</body>
+</html>
