@@ -1,0 +1,51 @@
+html, body {
+    background-image: url("../images/background.jpg");
+    background-size:100%;
+    background-repeat:no-repeat;
+    height: 100%;
+    width: 100%;
+    background-color: #dbeeff;
+    color: #131722;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    text-align: center;
+}
+
+nav {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 20px;
+    color: ##112263
+}
+
+a {
+    color: #112263;
+}
+
+#container{
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	margin-top: 100px;
+    margin-left: 80px;
+
+}
+
+#container > div{
+	position: relative;
+	float: left;
+	margin: 10px 10px 0 0;
+}
+
+#container > div > img{
+	display: block;
+	transform: translateZ(0);
+	transition: transform .5s;
+}
+
+#container > div:hover{
+	z-index: 1;
+}
+
+#container > div:hover > img{
+	transform: scale(2,2);
+	transition: transform .7s;
+}
