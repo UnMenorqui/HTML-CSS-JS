@@ -1,0 +1,27 @@
+body {
+ margin:0;
+ background: #333;
+ width: 100vw;
+}
+svg {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-event: none;
+  // background: transparent;
+}
+
+[fill="#596170"] {
+  fill: #b3b3b3;
+}
+
+#bg {
+  fill: #D4C3C3;
+}
