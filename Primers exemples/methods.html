@@ -32,13 +32,39 @@
     <div>
     </div>
 
+    <p id="hola1"></p>
+
+    <form name="myform" id="myform">
+        <input type="text" name="message" value="" />
+        <input type="submit" name="submit" onclick="DoSubmit()" />
+    </form>
+
+
+
     <script>
     var x = document.getElementsByTagName("div");
-    for (i = 0; i < 4; i++) {
+    for (i = 0; i < x.length; i++) {
         if (i == 0) x[i].innerHTML = "PRIMER";
         else if (i > 0 && i < 3) x[i].innerHTML = "SEGON";
         else x[i].innerHTML = "TERCER";
     }
+
+    var person = prompt("Please enter your name", "Name");
+
+    if (person != null) {
+        document.getElementById("hola1").innerHTML =
+        "Hello " + person + "!";
+    }
+
+    function DoSubmit(){
+        var person2 = document.myform.message.value;
+        document.getElementById("hola1").innerHTML =
+        "Hello " + person2 + "!";
+
+        return true;
+    }
+
+
 
     </script>
 </body>
